@@ -1,7 +1,7 @@
 <?php
 include("tag_a.html")
 ?> 
-<form action="action_register.php" method="post">
+<form action="login_action.php" method="post">
   <div class="container">
     <label for="username"><b class="label_text">نام کاربری *</b></label><br>
     <input class="re" type="text" placeholder="وارد کردن نام کابری" name="username" required> <br>
