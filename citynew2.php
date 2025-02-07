@@ -1,0 +1,22 @@
+<?php
+include("tag_a.html");
+$name=$_POST["name"];
+$ghymat=$_POST["ghymat"];
+$a=mysqli_connect("localhost","root","","amir");
+$b=mysqli_query($a,"INSERT INTO `mahsol`(`name`, `ghymat`) VALUES ('$name','$ghymat');");
+mysqli_close($a);
+?>
+<?php
+if($b)
+{
+ ?>
+ <script>
+    location.replace("list_mahsol.php");
+ </script>   
+ <?php
+}else
+echo("خطا");
+?>
+<?php
+include("footer2.html");
+?>

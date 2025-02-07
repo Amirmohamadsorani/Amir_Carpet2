@@ -1,8 +1,7 @@
 
 <?php
-include("tag_a.html");
+include("header2.php");
 ?>
-
 <?php
     $username=$_POST["username"];
     $email=$_POST["email"];

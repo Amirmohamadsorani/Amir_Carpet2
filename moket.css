@@ -173,4 +173,11 @@ button:hover {
 .button{
     margin-top: 20px;
 }
+.sel{
+    font-size: 15px;
+    width: 250px;
+    height: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 50px;
+}
 

@@ -27,7 +27,7 @@
                         <a class="nav-link" href="moarefi_anvae_moket_porz_boland.php">معرفی انواع موکت پرز بلند<span class="sr-only"></span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="moarefi_anvae_moket_porz_kotah.php"> مهرفی انواع موکت پرز کوتاه</a>
+                        <a class="nav-link " href="moarefi_anvae_moket_porz_kotah.php"> معرفی انواع موکت پرز کوتاه</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " href="price_table.php">لیست قیمت</a>
@@ -43,20 +43,26 @@
                           <li class="nav-item">
                            <a class="nav-link " href="sellform.php">فرم فروش</a>
                           </li>
+
+                          <li class="nav-item">
+                           <a class="nav-link " href="citynew.php">افزودن محصول</a>
+                          </li>
                     </ul>
                     
                 </div>
             </nav><br>
-            <main class="p-3 bg-danger-subtle text-black">
-   <br>
-<br>
+            <main class="p-3 bg-danger-subtle text-black" id="main">
+</br>
+</br>
 <div>
     <b>موکت کبریتی</b>
 </div><br>
+<div>
     <figure class="figure">
-    <img src="picture/keb.jpg" class="figure-img img-fluid rounded" class="justify-content-sm-center" class="rounded mx-auto d-block" alt="...">
+    <img src="picture/keb.jpg" class="figure-img img-fluid rounded" class="img-fluid" class="justify-content-sm-center" class="rounded mx-auto d-block" alt="...">
+      <p class="p">یکی دیگر از انواع موکت ها، موکت کبریتی است که احتمالاً آن را در بسیاری از فضاهای اداری و مسکونی دیده‌اید. این موکت‌ها معمولاً طراحی ساده ‌ای دارند. یکی از ساده ترین و ارزان ترین انواع موکت محسوب می‌شوند موکت‌های کبریتی معمولاً بافتی زبر و سختی دارند و از طرفی بسیار مقاوم هستند. قرار دادن اجسام سنگین روی نیمکت‌ها موجب آسیب دیدن به آن نمی‌شود و به دلیل ساده بودن می‌توانید از آن در هر فضایی که دوست دارید استفاده نمایید. معمولاً از موکت‌های کبریتی برای پوشاندن راهروی هتل‌ها و فضاهای پرتردد استفاده می‌شود، به همین دلیل به این نوع موکت‌ها موکت‌های هتلی نیز گفته می‌شود.</p>
     </figure>
-    <p class="p">یکی دیگر از انواع موکت ها، موکت کبریتی است که احتمالاً آن را در بسیاری از فضاهای اداری و مسکونی دیده‌اید. این موکت‌ها معمولاً طراحی ساده ‌ای دارند. یکی از ساده ترین و ارزان ترین انواع موکت محسوب می‌شوند موکت‌های کبریتی معمولاً بافتی زبر و سختی دارند و از طرفی بسیار مقاوم هستند. قرار دادن اجسام سنگین روی نیمکت‌ها موجب آسیب دیدن به آن نمی‌شود و به دلیل ساده بودن می‌توانید از آن در هر فضایی که دوست دارید استفاده نمایید. معمولاً از موکت‌های کبریتی برای پوشاندن راهروی هتل‌ها و فضاهای پرتردد استفاده می‌شود، به همین دلیل به این نوع موکت‌ها موکت‌های هتلی نیز گفته می‌شود.</p>
+
     <b>موکت نایلونی</b><br>
     <br>
     <figure class="figure">

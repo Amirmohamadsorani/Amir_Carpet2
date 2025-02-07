@@ -12,10 +12,11 @@ include("tag_a.html");
     $row=mysqli_fetch_array($result);
     mysqli_close($c);
     if ($row) {
-        echo("ورود موفق");
+        header("Location: header3.php?msg=success");
     } else {
-        echo("ورود ناموفق");
+        header("Location: header3.php?msg=error");
     }
+    exit();
 ?>
 
 <?php
