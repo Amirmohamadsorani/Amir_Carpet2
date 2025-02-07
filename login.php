@@ -9,7 +9,7 @@ include("tag_a.html")
     <label for="passw"><b class="label_text">رمز عبور *</b></label><br>
     <input class="re" type="password" placeholder="وارد کردن رمز عبور" name="passw" required><br>
 
-    <button class="button" type="submit">ورود</button>
+    <button class="button2" type="submit">ورود</button>
   </div>
 
 </form>

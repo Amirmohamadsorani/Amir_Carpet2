@@ -11,6 +11,9 @@ include("tag_a.html");
    
     <p>قیمت:</p>
     <input type="text" name="ghymat">
+
+    <p>کد محصول:</p>
+    <input type="text" name="id">
     <input type="submit" value="اضافه کردن" class="card">
 </form>
 

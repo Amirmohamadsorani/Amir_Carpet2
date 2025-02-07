@@ -14,26 +14,28 @@ mysqli_close($a);
                     </br>
                         <h2 class='alert alert-success'  role='alert'>لیست محصولات</h2>
                         <hr class="divider" />
-
-<div class="row">
-    <div class="col">
-        <select class="sel">
             <?php
             $row=mysqli_fetch_array($b);
             while($row)
             {
                 ?>
-                <option class="sel">
-                        <?php echo($row["name"]);?>
-                </option>
-                <option class="sel">
-                        <?php echo($row["ghymat"]);?>
-                </option>
-                <?php
+                <div class="row">
+                <div class="col">
+                    <button class="btn btn-outline-secondary"><a class="lk" href="cityedit.php?id=<?php echo($row["id"]); ?>" id="n2">edit</a></button>
+                    <button class="btn btn-outline-secondary"><a class="lk" href="citydelete.php?id=<?php echo($row["id"]); ?>" id="n1">delete</a></button>
+                    <span>
+                        <?php echo($row["name"]);  ?>
+                    </span>
+                    <span>
+                        <?php echo($row["ghymat"]);  ?>
+                    </span>
+                </div>
+            </div>
+            <?php
              $row=mysqli_fetch_array($b);
             }
             ?>
-        </select>
+        
     </div>
 </div>
 </div>

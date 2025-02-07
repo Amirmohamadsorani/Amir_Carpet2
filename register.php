@@ -15,7 +15,7 @@ include("tag_a.html");
     <label for="repassw"><b class="label_text">تکرار رمز عبور *</b></label><br>
     <input class="re" type="password" placeholder="تکرار رمز عبور" name="repassw" required><br>
 
-    <button  class="button" type="submit">ورود</button>
+    <button class="button2"  class="button" type="submit">ورود</button>
   </div>
 
 </form>

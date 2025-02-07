@@ -4,7 +4,7 @@ include("tag_a.html");
 $id=$_POST["id"];
 $name=$_POST["name"];
 $ghymat=$_POST["ghymat"];
-$a=mysqli_connect("localhost","root","","mahsol");
+$a=mysqli_connect("localhost","root","","amir");
 $b=mysqli_query($a,"UPDATE `mahsol` SET `name`='$name',`ghymat`='$ghymat' WHERE `id`=$id;
 ");
 mysqli_close($a);

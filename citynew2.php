@@ -2,8 +2,9 @@
 include("tag_a.html");
 $name=$_POST["name"];
 $ghymat=$_POST["ghymat"];
+$id=$_POST["id"];
 $a=mysqli_connect("localhost","root","","amir");
-$b=mysqli_query($a,"INSERT INTO `mahsol`(`name`, `ghymat`) VALUES ('$name','$ghymat');");
+$b=mysqli_query($a,"INSERT INTO `mahsol`(`name`, `ghymat`, `id`) VALUES ('$name','$ghymat','$id');");
 mysqli_close($a);
 ?>
 <?php

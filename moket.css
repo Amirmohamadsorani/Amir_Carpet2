@@ -149,7 +149,7 @@ b{
     margin-top: 50px;
     margin-bottom: 50px;
 }
-button {
+.button2{
     background-color: #1a5942;
     color: white;
     padding: 14px 20px;
@@ -180,4 +180,6 @@ button:hover {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-right: 50px;
 }
-
+.lk{
+    text-decoration: none;
+}
