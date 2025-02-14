@@ -14,28 +14,35 @@ mysqli_close($a);
                     </br>
                         <h2 class='alert alert-success'  role='alert'>لیست محصولات</h2>
                         <hr class="divider" />
+                        <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">ویرایش</th>
+      <th scope="col">حذف کردن</th>
+      <th scope="col">اسم </th>
+      <th scope="col">قیمت </th>
+    </tr>
+  </thead>
+
             <?php
             $row=mysqli_fetch_array($b);
             while($row)
             {
                 ?>
-                <div class="row">
-                <div class="col">
-                    <button class="btn btn-outline-secondary"><a class="lk" href="cityedit.php?id=<?php echo($row["id"]); ?>" id="n2">edit</a></button>
-                    <button class="btn btn-outline-secondary"><a class="lk" href="citydelete.php?id=<?php echo($row["id"]); ?>" id="n1">delete</a></button>
-                    <span>
-                        <?php echo($row["name"]);  ?>
-                    </span>
-                    <span>
-                        <?php echo($row["ghymat"]);  ?>
-                    </span>
-                </div>
-            </div>
+                  <tbody>
+    <tr>
+      <th scope="row"><button class="btn btn-outline-secondary"><a class="lk" href="cityedit.php?id=<?php echo($row["id"]); ?>" id="n2">edit</a></button></th>
+      <td><button class="btn btn-outline-secondary"><a class="lk" href="citydelete.php?id=<?php echo($row["id"]); ?>" id="n1">delete</a></button></td>
+      <td><span> <?php echo($row["name"]);  ?> </span></td>
+      <td><span>  <?php echo($row["ghymat"]);  ?> </span></td>
+    </tr>
+
             <?php
              $row=mysqli_fetch_array($b);
             }
             ?>
-        
+                    </tbody>
+                    </table>
     </div>
 </div>
 </div>
