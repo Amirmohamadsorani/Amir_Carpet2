@@ -1,5 +1,5 @@
 <?php
-include("tag_a.html")
+include("tag_a.php")
 ?>
 
 <div class="form-floating mb-3">

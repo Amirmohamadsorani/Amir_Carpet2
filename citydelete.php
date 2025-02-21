@@ -1,5 +1,5 @@
 <?php
-include("tag_a.html");
+include("tag_a.php")
 $id=$_GET["id"];
 $a=mysqli_connect("localhost","root","","amir");
 $b=mysqli_query($a,"DELETE FROM `mahsol` WHERE `id`=$id;");

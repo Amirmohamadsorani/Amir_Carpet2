@@ -1,6 +1,6 @@
 
 <?php
-include("tag_a.html");
+include("tag_a.php")
 $a=mysqli_connect("localhost","root","","amir");
 $b=mysqli_query($a,"SELECT * FROM `mahsol`");
 mysqli_close($a);

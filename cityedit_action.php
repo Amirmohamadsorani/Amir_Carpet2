@@ -1,11 +1,13 @@
 
 <?php
-include("tag_a.html");
+include("tag_a.php")
 $id=$_POST["id"];
 $name=$_POST["name"];
 $ghymat=$_POST["ghymat"];
+$imageurl="picture/".$image;
+move_uploaded_file($_FILES["image"]["tmp_name"],$imageurl);
 $a=mysqli_connect("localhost","root","","amir");
-$b=mysqli_query($a,"UPDATE `mahsol` SET `name`='$name',`ghymat`='$ghymat' WHERE `id`=$id;
+$b=mysqli_query($a,"UPDATE `mahsol` SET `name`='$name',`ghymat`='$ghymat',`img`='$imageurl' WHERE `id`=$id;
 ");
 mysqli_close($a);
 ?>

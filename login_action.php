@@ -1,6 +1,6 @@
 
 <?php
-include("tag_a.html");
+include("tag_a.php");
 ?>
 
 <?php
@@ -13,6 +13,7 @@ include("tag_a.html");
     mysqli_close($c);
     if ($row) {
         header("Location: header3.php?msg=success");
+        $_SESSION["login"] = true;
     } else {
         header("Location: header3.php?msg=error");
     }

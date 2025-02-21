@@ -1,5 +1,5 @@
 <?php
-include("tag_a.html");
+include("tag_a.php")
 ?> 
 <form action="action_register.php" method="post">
   <div class="container">

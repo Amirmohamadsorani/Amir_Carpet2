@@ -13,44 +13,9 @@
 </head>
 <body class="">
         <div id="home">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-                <a href="#" class="navbar-brand">
-                </a>
-                <a class="navbar-brand" href="#">فروشگاه موکت امیر کارپت</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                            <a class="nav-link" href="moarefi_anvae_moket_porz_boland.php">| معرفی موکت پرز بلند |<span class="sr-only"></span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="moarefi_anvae_moket_porz_kotah.php">| معرفی موکت پرز کوتاه |</a>
-                        </li>
-                    <li class="nav-item">
-                        <a class="nav-link" class="link-warning" href="price_table.php">| لیست قیمت |</a>
-                    </li>
-                        <li class="nav-item">
-                           <a class="nav-link " href="register.php">| ثبت نام |</a>
-                          </li>
-                          <li class="nav-item">
-                           <a class="nav-link " href="login.php">| ورود |</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link " href="sellform.php">| فرم خرید |</a>
-                           </li>
-                           <li class="nav-item">
-                            <a class="nav-link " href="citynew.php">|+|</a>
-                           </li>
-                           <li class="nav-item">
-                            <a class="nav-link " href="menu_mahsol.php">| ویرایش یا حذف محصول |</a>
-                           </li>
-                    </ul>
-                    
-                </div>
-            </nav><br>
+        <?php
+include("tag_a.php")
+?> <br>
             <main class="p-3 bg-danger-subtle text-black" id="main">
 </br>
 </br>

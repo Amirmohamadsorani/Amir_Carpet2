@@ -1,6 +1,6 @@
 
 <?php
-include("tag_a.html");
+include("tag_a.php")
 $a=mysqli_connect("localhost","root","","amir");
 $b=mysqli_query($a,"SELECT * FROM `mahsol`");
 mysqli_close($a);
@@ -35,6 +35,7 @@ mysqli_close($a);
       <td><button class="btn btn-outline-secondary"><a class="lk" href="citydelete.php?id=<?php echo($row["id"]); ?>" id="n1">delete</a></button></td>
       <td><span> <?php echo($row["name"]);  ?> </span></td>
       <td><span>  <?php echo($row["ghymat"]);  ?> </span></td>
+
     </tr>
 
             <?php

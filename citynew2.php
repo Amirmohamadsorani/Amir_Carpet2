@@ -1,10 +1,14 @@
 <?php
-include("tag_a.html");
+include("tag_a.php")
+?>
+<?php
 $name=$_POST["name"];
 $ghymat=$_POST["ghymat"];
 $id=$_POST["id"];
+$imageurl="picture/".$image;
+move_uploaded_file($_FILES["image"]["tmp_name"],$imageurl);
 $a=mysqli_connect("localhost","root","","amir");
-$b=mysqli_query($a,"INSERT INTO `mahsol`(`name`, `ghymat`, `id`) VALUES ('$name','$ghymat','$id');");
+$b=mysqli_query($a,"INSERT INTO `mahsol`(`name`, `ghymat`, `id`, `img`) VALUES ('$name','$ghymat','$id','$imageurl');");
 mysqli_close($a);
 ?>
 <?php
@@ -12,7 +16,7 @@ if($b)
 {
  ?>
  <script>
-    location.replace("list_mahsol.php");
+    location.replace("menu_mahsol.php");
  </script>   
  <?php
 }else
