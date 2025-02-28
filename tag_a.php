@@ -53,12 +53,19 @@
                           <li class="nav-item">
                             <a class="nav-link " href="index.php">| بازگشت |</a>
                            </li>
-                           <li class="nav-item">
+                           <?php if(isset($_SESSION["admin"]) && $_SESSION["admin"]==true){ ?>
+                            <li class="nav-item">
                             <a class="nav-link " href="citynew.php">|+|</a>
                            </li>
-                           <li class="nav-item">
-                            <a class="nav-link " href="menu_mahsol.php">| ویرایش یا حذف محصول |</a>
-                           </li>
+            <?php }else{
+                
+            } ?>
+
+                           <?php if(isset($_SESSION["admin"]) && $_SESSION["admin"]==true){ ?>
+                <li class="nav-item"><a class="nav-link " href="menu_mahsol.php">مدیریت</a></li>
+            <?php }else{
+                
+            } ?>
                     </ul>
                     
                 </div>
