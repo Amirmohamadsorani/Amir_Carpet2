@@ -14,6 +14,7 @@ include("tag_a.php");
     if ($row) {
         header("Location: header3.php?msg=success");
         $_SESSION["login"] = true;
+        $_SESSION["admin"]=$row["admin"];
     } else {
         header("Location: header3.php?msg=error");
     }

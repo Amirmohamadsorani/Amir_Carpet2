@@ -1,11 +1,21 @@
 <?php
 include("tag_a.php")
-$id=$_GET["id"];
-$a=mysqli_connect("localhost","root","","amir");
-$b=mysqli_query($a,"SELECT * FROM `mahsol`WHERE `id`=$id");
-mysqli_close($a);
-$row=mysqli_fetch_array($b)
-$imageurl=$row["img"];
+$name="";
+$ghymat="";
+$imageurl="";
+if(isset( $_GET["id"])){
+
+    $id=$_GET["id"];
+    $a=mysqli_connect("localhost","root","","amir");
+    $b=mysqli_query($a,"SELECT * FROM `mahsol`WHERE `id`=$id");
+    mysqli_close($a);
+    $row=mysqli_fetch_array($b)
+    if($row){
+        $name=$row["name"];
+        $ghymat=$row["ghymat"];
+        $imageurl=$row["imageurl"];
+    }
+}
 ?>
 </br>
 </br>

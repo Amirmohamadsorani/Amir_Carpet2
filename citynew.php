@@ -2,7 +2,7 @@
 include("tag_a.php")
 ?>
 
-<form action="citynew2.php" method="POST"></br>
+<form action="citynew2.php" method="POST" enctype="multipart/form-data"></br>
 </br>
 </br>
 <p>نام:</p>

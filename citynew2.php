@@ -26,18 +26,18 @@ if($extension!="jpg")
     $flagsaveok=false;
     $massege.="نوع فایل باید jpg باشد";
 }
-$updload=move_uploaded_file($_FILES["image"]["tmp_name"],$imageurl);
+$upload=move_uploaded_file($_FILES["image"]["tmp_name"],$imageurl);
 
 if($upload==false)
 {
     $flagsaveok=false;
-    $massege+="در اپلود فایل مشکلی پیش امده است";
+    $massege.="در اپلود فایل مشکلی پیش امده است";
 }
 
 if($flagsaveok)
 {
 $a=mysqli_connect("localhost","root","","amir");
-$b=mysqli_query($a,"INSERT INTO `mahsol`(`name`, `ghymat`, `id`, `imageurl`) VALUES ('$name','$ghymat','$id','$imageurl');");
+$b=mysqli_query($a,"INSERT INTO `mahsol`(`name`, `ghymat`, `imageurl`) VALUES ('$name','$ghymat','$imageurl');");
 mysqli_close($a);
 ?>
 <?php

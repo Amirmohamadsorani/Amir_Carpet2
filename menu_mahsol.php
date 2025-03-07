@@ -3,14 +3,6 @@
 include("tag_a.php")
 ?>
 <?php
-
-
-
-
-    ?>
-
-    <?php
-
 ?>
 <div class="row">
 <div class="container px-4 px-lg-5">

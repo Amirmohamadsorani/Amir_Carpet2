@@ -35,17 +35,19 @@
                     <li class="nav-item">
                         <a class="nav-link" class="link-warning" href="price_table.php">| لیست قیمت |</a>
                     </li>
-                        <li class="nav-item">
-                           <a class="nav-link " href="register.php">| ثبت نام |</a>
-                          </li>
+
                           <?php if(isset($_SESSION["login"])){ ?>
                           <li class="nav-item">
                            <a class="nav-link " href="logout.php">| خروج |</a>
                           </li>
                           <?php } else { ?>
                             <li class="nav-item">
+                           <a class="nav-link " href="register.php">| ثبت نام |</a>
+                          </li>
+                            <li class="nav-item">
                            <a class="nav-link " href="login.php">| ورود |</a>
                           </li>
+
                            <?php } ?>
                            <li class="nav-item">
                             <a class="nav-link " href="sellform.php">| فرم خرید |</a>
