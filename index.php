@@ -1,88 +1,134 @@
-
-<?php
-include("tag_a.php")
-?><br>
-            <main class="p-3 bg-danger-subtle text-black" id="main">
-</br>
-</br>
-<div>
-    <b>موکت کبریتی</b>
-</div><br>
-<div>
-    <figure class="figure">
-    <img src="picture/keb.jpg" class="figure-img img-fluid rounded" class="img-fluid" class="justify-content-sm-center" class="rounded mx-auto d-block" alt="...">
-      <p class="p">یکی دیگر از انواع موکت ها، موکت کبریتی است که احتمالاً آن را در بسیاری از فضاهای اداری و مسکونی دیده‌اید. این موکت‌ها معمولاً طراحی ساده ‌ای دارند. یکی از ساده ترین و ارزان ترین انواع موکت محسوب می‌شوند موکت‌های کبریتی معمولاً بافتی زبر و سختی دارند و از طرفی بسیار مقاوم هستند. قرار دادن اجسام سنگین روی نیمکت‌ها موجب آسیب دیدن به آن نمی‌شود و به دلیل ساده بودن می‌توانید از آن در هر فضایی که دوست دارید استفاده نمایید. معمولاً از موکت‌های کبریتی برای پوشاندن راهروی هتل‌ها و فضاهای پرتردد استفاده می‌شود، به همین دلیل به این نوع موکت‌ها موکت‌های هتلی نیز گفته می‌شود.</p>
-    </figure>
-
-    <b>موکت نایلونی</b><br>
-    <br>
-    <figure class="figure">
-  <img src="picture/nailoni.jpg" class="figure-img img-fluid rounded" class="rounded mx-auto d-block" alt="...">
-</figure>
-    <p class="p">یکی از رایج ترین جنس‌هایی  که از آن برای تولید موکت استفاده می‌شود، نایلون است. موکت‌های نایلون بافتی نرم و یکپارچه دارند. از طرف دیگر در برابر لکه شدن و آسیب نیز بسیار مقاوم هستند. جالب است بدانید که تقریباً ۹۰ درصد موکت‌هایی که در خانه‌ها استفاده می‌شوند موکت‌های نایلونی یا پلی آمید هستند. این موکت‌ها در هتل‌ها نیز به وفور مورد استفاده قرار می‌گیرند، زیرا مقاومت بالایی در برابر پارگی و آسیب و کپک زدن دارند.</p>
-    <div>
-        <b>موکت الفین</b><br>
-    </div><br>
-    <figure class="figure">
-    <img src="picture/alfin.jpg"class="figure-img img-fluid rounded" class="rounded mx-auto d-block" alt="...">
-    </figure>
-    <p class="p">موکت الفین که به آن موکت پلی پروپلین نیز گفته می‌شود، یکی از محبوب ترین انواع موکت‌ها هستند که بیشتر برای محیط‌های اداری مورد استفاده قرار می‌گیرند. این موکت‌ها که به تازگی در فضاهای خانگی نیز استفاده می‌شوند، جنسی شبیه به پشم طبیعی دارند و از طرف دیگر مقاومت بالای این موکت موجب شده تا برای استفاده در فضاهای شلوغ و پرتردد بسیار مناسب باشند. مهم ‌ترین مزیت موکت‌های پلی پروپلین قیمت مناسب و نصب آسان آن است. از طرف دیگر این موکت‌ها تنوع بسیار زیادی دارند و تمیز کردن آن‌ها نیز بسیار ساده است.</p>
-    <div>
-    <b>موکت پلی استر</b><br>
-    </div><br>
-    <figure class="figure">
-    <img src="picture/poli ester.jpg" class="figure-img img-fluid rounded" class="rounded mx-auto d-block" alt="...">
-    </figure>
-    <p class="p">موکت پلی استر در واقع موکتی ضد آلرژی و ضد حساسیت است، با محیط زیست نیز سازگاری زیادی دارد و از مواد بازیافتی تهیه می‌شود. این نوع موکت‌ها مقاومت بالایی در برابر رنگ پریدگی دارند و تنوع رنگ و مدل‌های آن نیز بسیار زیاد است. مهم ترین موضوعی که باید در مورد موکت‌های پلی استر بدانید این است که قرار دادن اجسام سنگین روی موکت‌های پلی استر موجب آسیب به بافت موکت می‌شود. بنابراین این موکت معمولاً به ندرت برای فضاهای پر تردد استفاده می‌شود. به طور معمول قیمت موکت‌های پلی استر نسبت به‌ موکت‌های پشمی ‌و نایلونی ارزان تر است و از همین رو در دسته رایج ترین و محبوب ترین انواع موکت‌ها برای خانه محسوب می‌شوند. اگر از موکت‌های پلی استر به خوبی مراقبت شود تا ۱۵ سال بدون مشکل کار خواهند کرد.</p>
-    <div>
-        <b>انواع موکت پشمی</b>
-    </div>
-    <p class="p">یکی از گران ترین و لوکس ترین انواع موکت‌ها، موکت‌های پشمی‌ هستند. این موکت‌ها از پشم طبیعی تولید می‌شوند. به همین دلیل بسیار نرم هستند و ماندگاری بالایی دارند. معمولاً برای تولید این موکت‌ها از پشم ‌طبیعی، بدون هیچ ماده شیمیایی و مصنوعی استفاده می‌شود، به همین دلیل برای افراد حساس و افرادی که به آلرژی مبتلا هستند بسیار مناسب است. این موکت‌ها باید به درستی مراقبت شوند تا روی بافت آن کپک و سفیدک ایجاد نشود. به خاطر داشته باشید که استفاده از موکت‌های پشمی ‌برای مناطق شرجی و مرطوب به هیچ عنوان مناسب نیست.موکت‌های پشمی مقاومت بالایی دارند و تمیز کردن آن‌ها نیز بسیار ساده است این موکت‌ها با محیط زیست سازگار هستند و از طرف دیگر در برابر آتش نیز بسیار مقاوم هستند.</p>
-    <div>
-        <b>موکت تافتینگ</b><br>
-    </div><br>
-    <figure class="figure">
-    <img src="picture/tafting.jpg" class="figure-img img-fluid rounded" class="rounded mx-auto d-block" alt="...">
-    </figure>
-    <p class="p">موکت تافتینگ به موکت‌هایی شیک و چشمگیر گفته می‌شود که پرزهای بلندی دارند. به طور معمول برای تهیه این موکت‌ها از پشم طبیعی استفاده می‌شود. در بسیاری از مواقع نیز موکت‌های تافتینگ از ترکیب پشم و مواد مصنوعی مثل نایلون تولید می‌شوند. برای تهیه موکت‌های تافتینگ پرزهای بلند آن روی لایه زیرین بافته می‌شود و سپس به لایه دیگری چسبانده می‌شود. این موکت‌ها نیاز به مراقبت بیشتری نسبت به سایر انواع موکت‌ها دارند. زیرا در صورت مراقبت نکردن ممکن است پرز‌ها از روی موکت جدا شوند. بنابراین بهتر است از موکت‌های تافتینگ در مکان‌های پر تردد استفاده نشود.
-
-        تنوع بالا و رنگ بندی زیاد در کنار لطافت از مهم ترین ویژگی‌های موکت‌های تافتینگ هستند. این موکت‌ها شباهت زیادی به فرش دارند و از همین رو انتخاب مناسبی برای منزل و فضاهای مدرن هستند ضخامت بالای این موکت‌ها موجب گرم شدن فضای خانه می‌شود.  در رابطه با شستشوی موکت در منزل یشتر بدانید.</p>
-</main>
-<footer>
-    <div class="shadow p-3 mb-5 bg-body-tertiary rounded">
-   <div class="row justify-content-center">
-       <div class="col-md5 text-center">
-       
-           <p>
-             برای نصب و اجرای انواع موکت با شماره زیر تماس بگیر و از مشاوره رایگان ما بهره مند شوید
-           </p>
-           <p>
-                شماره تلفن : 09309161300
-            </p>
-               <a href="#">
-                   <i class="fab fa-twitter-square">
-
-                   </i>
-                   <i class="fab fa-instagram">
-
-                   </i>
-                   <i class="fab fa-facebook">
-
-                   </i>
-                   <i class="fab fa-youtube">
-
-                   </i>
-               </a>
-
-               <hr class="footer-hr">
-               <p>
-                   استفاده از مطالب سایت تنها با درج لینک مستقیم به آن مطلب مجاز است
-
-            </p>
-       </div>
-   </div>
-</div>
-</footer>
-</div>
-</body>
+<?php include("navbar.php") ?>
+        <header class="masthead">
+            <div class="container px-4 px-lg-5 h-100" >
+                <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                    <div class="col-lg-8 align-self-end">
+                        <h1 class="text-white font-weight-bold"> ساخت کابینت های آشپزخانه</h1>
+                        <hr class="divider" />
+                    </div>
+                    <div class="col-lg-8 align-self-baseline">
+                        <p class="text-white-75 mb-5"> طراحی و ساخت کابینت های آشپزخانه طبق سلیقه شما</p>
+                        <a class="btn btn-primary btn-xl" href="#about">دیدن تصاویر بیشتر</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="page-section bg-primary" id="about">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="text-white mt-0"> معرفی انواع MDF</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <?php 
+        include("connect.php");
+$b=mysqli_query($a,"SELECT * FROM `product`");
+mysqli_close($a);
+?>
+  <?php
+  $row=mysqli_fetch_array($b);
+  while($row)
+  {
+      ?>
+      <div id="portfolio">
+            <div class="container-fluid p-0">
+                <div class="row g-0">
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/mdf2.webp" title="Project Name">
+                            <img class="img-fluid" src="assets/img/mdf2.webp" alt="..." />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50"><?php echo($row["name"]);?></div>
+                                <div class="project-name"> <?php echo($row["explane"]);?> 
+                        </a>
+                    </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <?php
+         $row=mysqli_fetch_array($b); 
+  }
+  ?>
+        <section class="page-section bg-primary" id="about">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 text-center">
+                    <a class="btn btn-primary btn-xl" href="mahsol.php">سفارش محصول مورد نظر</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="page-section" id="contact">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 col-xl-6 text-center">
+                        <h2 class="mt-0">نظرات خود را با ما به اشتراک بگذارید</h2>
+                        <hr class="divider" />
+                        <p class="text-muted mb-5">انتقادات و پیشنهادهای ارزشمند خود را با ما به اشتراک بگذارید</p>
+                    </div>
+                </div>
+                <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+                    <div class="col-lg-6">
+                        <form action="view.php" method="post">
+                            <div class="form-floating mb-3">
+                                <input class="form-control" type="text" placeholder="وارد کردن نام کاربری" name="name" required><br>
+                                <label for="name">نام </label>
+                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" type="text" placeholder="وارد کردن نام" name="phone" required><br>
+                                <label for="phone">شماره تلفن</label>
+                                <div class="invalid-feedback" data-sb-feedback="name:required">A phone is required.</div>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" type="email" placeholder="وارد کردن ایمیل" name="email" required><br>
+                                <label for="email">ایمیل</label>
+                                <div class="invalid-feedback" data-sb-feedback="name:required">A email is required.</div>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" type="text" placeholder="وارد کردن رمز عبور" name="message" required><br>
+                                <label for="message">نظر</label>
+                                <div class="invalid-feedback" data-sb-feedback="name:required">A message is required.</div>
+                            </div>
+                            <button class="btn btn-primary" type="submit"> ثبت نظر</button>
+                            <script>
+                            </script>
+                        </form>
+                    </div>
+                </div>
+        </section>
+        <footer class="bg-dark text-white py-4" id="fo">
+            <div class="container text-center">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-4 mb-3">
+                        <i class="bi bi-phone fs-3 mb-2"></i>
+                        <div class="fw-bold">09368523904</div>
+                    </div>
+                </div>
+            </div>
+            <div class="container text-center">
+                <div class="mb-3">
+                    <a href="https://instagram.com" class="text-white mx-2" target="_blank">
+                        <i class="bi bi-instagram fs-3"></i>
+                    </a>
+                    <a href="https://t.me" class="text-white mx-2" target="_blank">
+                        <i class="bi bi-telegram fs-3"></i>
+                    </a>
+                    <a href="https://wa.me" class="text-white mx-2" target="_blank">
+                        <i class="bi bi-whatsapp fs-3"></i>
+                    </a>
+                    <a href="https://linkedin.com" class="text-white mx-2" target="_blank">
+                        <i class="bi bi-linkedin fs-3"></i>
+                    </a>
+                </div>
+                <div class="small text-center">
+                    Copyright &copy; <script>document.write(new Date().getFullYear());</script> - Hesam Foroghy
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>

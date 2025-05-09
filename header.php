@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fa">
-<head>
-<?php 
+    <head>
+    <?php 
         session_start();
         ?>
         <meta charset="utf-8" />
@@ -29,28 +29,16 @@
                         <li class="nav-item"><a class="nav-link" href="login.php">ورود به حساب کابری</a></li>
                         <li class="nav-item"><a class="nav-link" href="index.html">گالری تصاویر</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">راه های ارتباطی</a></li>
+                        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
                     </ul>
                 </div>
             </div>
         </nav>
         <header class="masthead">
-            <div class="form-floating mb-3">
-                          <?php
-                          if (isset($_GET['msg'])): 
-                          ?>
-                          <div class="alert alert-<?php echo ($_GET['msg'] == 'success' ? 'success' : 'danger'); 
-                          ?> text-center" role="alert">
-                          <?php
-                          echo ($_GET['msg'] == 'success' ? 'ورود موفقیت‌آمیز بود' : 'نام کاربری یا رمز عبور اشتباه است'); 
-                          ?>
-                        </div>
-            </div>
-                 <?php 
-                 endif; 
-                 ?>
-                 <div class="container px-4 px-lg-5">
+            <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 col-xl-6 text-center">
+                        <h2 class='alert alert-success' role='alert'>حساب کابری با موفقیت ساخته شد</h2>
                         <hr class="divider" />
                         <a class="btn btn-primary btn-xl" href="index.php">بازگشت به صفحه اصلی</a>
                     </div>
@@ -59,6 +47,3 @@
         </header>
     </body>
 </html>
-<?php
-include("footer.php");
-?>

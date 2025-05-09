@@ -1,19 +1,17 @@
-
 <?php
-include("header2.php");
+include("header.php");
 ?>
 <?php
+    $name=$_POST["name"];
     $username=$_POST["username"];
     $email=$_POST["email"];
     $password=$_POST["passw"];
-    $repassword=$_POST["repassw"];
-    $c=mysqli_connect("localhost","root","","amir");
-    mysqli_query($c,"INSERT INTO `carpet`(`username`, `email`, `password`, `repassword`) VALUES
-    ('$username','$email','$password','$repassword');");
-    mysqli_close($c);
+    $a=mysqli_connect("localhost","root","","cabinet");
+    mysqli_query($c,"INSERT INTO `user`(`name`, `username`, `email`, `password`) VALUES
+    ('$name','$username','$email','$password');");
+    mysqli_close($a);
 ?>
 <?php
-include("footer2.html");
+include("footer.php");
 ?>
-
 

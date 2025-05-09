@@ -1,5 +1,5 @@
 <?php
-include("tag_a.php");
+include("header.php");
 unset($_SESSION["login"]);
 unset($_SESSION["admin"]);
     ?>
@@ -8,5 +8,5 @@ unset($_SESSION["admin"]);
     </script>
     <?php
 
-include("footer2.html");
+include("footer.php");
 ?>

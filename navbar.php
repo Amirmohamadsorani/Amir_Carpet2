@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="fa">
-<head>
-<?php 
-        session_start();
-        ?>
+    <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
@@ -17,6 +14,9 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
         <link href="css/styles.css" rel="stylesheet" />
+        <?php 
+        session_start();
+        ?>
     </head>
     <body id="page-top">
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
@@ -25,40 +25,22 @@
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="register.php">ساخت حساب کابری</a></li>
-                        <li class="nav-item"><a class="nav-link" href="login.php">ورود به حساب کابری</a></li>
-                        <li class="nav-item"><a class="nav-link" href="index.html">گالری تصاویر</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">راه های ارتباطی</a></li>
+                    <?php if(isset($_SESSION["login"])){ ?>
+                          <li class="nav-item">
+                           <a class="nav-link " href="logout.php"> خروج از حساب کاربری</a>
+                          </li>
+                          <?php } else { ?>
+                            <li class="nav-item"><a class="nav-link" href="register.php">ساخت حساب کابری</a></li>
+                            <li class="nav-item"><a class="nav-link" href="login.php">ورود به حساب کابری</a></li>
+                           <?php } ?>
+                           <?php if(isset($_SESSION["admin"]) && $_SESSION["admin"]==true){ ?>
+                <li class="nav-item"><a class="nav-link " href="manage.php">مدیریت محصولات</a></li>
+                <li class="nav-item"><a class="nav-link " href="citynew.php">افزودن محصولات</a></li>
+            <?php }else{
+                
+            } ?>
+
                     </ul>
                 </div>
             </div>
         </nav>
-        <header class="masthead">
-            <div class="form-floating mb-3">
-                          <?php
-                          if (isset($_GET['msg'])): 
-                          ?>
-                          <div class="alert alert-<?php echo ($_GET['msg'] == 'success' ? 'success' : 'danger'); 
-                          ?> text-center" role="alert">
-                          <?php
-                          echo ($_GET['msg'] == 'success' ? 'ورود موفقیت‌آمیز بود' : 'نام کاربری یا رمز عبور اشتباه است'); 
-                          ?>
-                        </div>
-            </div>
-                 <?php 
-                 endif; 
-                 ?>
-                 <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-8 col-xl-6 text-center">
-                        <hr class="divider" />
-                        <a class="btn btn-primary btn-xl" href="index.php">بازگشت به صفحه اصلی</a>
-                    </div>
-                </div>
-            </div>
-        </header>
-    </body>
-</html>
-<?php
-include("footer.php");
-?>

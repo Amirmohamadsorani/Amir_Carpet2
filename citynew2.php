@@ -1,19 +1,18 @@
 <?php
-include("tag_a.php")
+include("navbar.php")
 ?>
 <?php
 $name=$_POST["name"];
 $ghymat=$_POST["ghymat"];
 $id=$_POST["id"];
+$explane=$_POST["explane"];
 $massege="";
 $flagsaveok=true;
 $image=$_FILES["image"]["name"];
-$imageurl="picture/".$image;
-
+$imageurl="assets/".$image;
 if(file_exists($imageurl)){
    $flagsaveok=false;
-   $massege.="فایل مشابه در سرور وجود دارد";
-
+   $massege.="فایل مشابه در بانک اصلاعاتی وجود دارد";
 }
 $size=($_FILES["image"]["size"]);
 if($size>10*1024*1024){
@@ -33,27 +32,21 @@ if($upload==false)
     $flagsaveok=false;
     $massege.="در اپلود فایل مشکلی پیش امده است";
 }
+include("connect.php");
 
-if($flagsaveok)
-{
-$a=mysqli_connect("localhost","root","","amir");
-$b=mysqli_query($a,"INSERT INTO `mahsol`(`name`, `ghymat`, `imageurl`) VALUES ('$name','$ghymat','$imageurl');");
+$b=mysqli_query($a,"INSERT INTO `product`(`id`, `name`, `ghymat`, `imageurl` ,`explane` ) VALUES ('$id','$name','$ghymat','$imageurl','$explane')");
 mysqli_close($a);
 ?>
-<?php
+<?php 
 if($b===true)
 {
  ?>
  <script>
-    location.replace("menu_mahsol.php");
+    location.replace("index.php");
  </script>   
  <?php
 }else
 echo("خطا");
-}
-?>
-<?php
-include("footer2.html");
 ?>
 
 

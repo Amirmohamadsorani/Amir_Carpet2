@@ -1,16 +1,15 @@
-
 <?php
-include("tag_a.php");
+include("header2.php");
 ?>
-
 <?php
-    $username=$_POST["username"];
+ session_start();
+    $username=$_POST["username1"];
     $password=$_POST["passw"];
-    $c=mysqli_connect("localhost","root","","amir");
-    $result=mysqli_query($c," SELECT * FROM `carpet` WHERE 
+    include("connect.php");
+    $result=mysqli_query($a," SELECT * FROM `user` WHERE 
     `username` = '$username' AND `password` = '$password';");
     $row=mysqli_fetch_array($result);
-    mysqli_close($c);
+    mysqli_close($a);
     if ($row) {
         header("Location: header3.php?msg=success");
         $_SESSION["login"] = true;
@@ -20,7 +19,8 @@ include("tag_a.php");
     }
     exit();
 ?>
-
 <?php
-include("footer2.html");
+include("footer.php");
 ?>
+
+

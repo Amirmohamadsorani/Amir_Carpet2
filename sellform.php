@@ -1,79 +1,51 @@
-<?php
-include("tag_a.php")
-?>
-<br>
-<br>
-<br>
-<form class="row g-3">
-  <div class="col-md-6">
-    <label for="inputEmail4" class="form-label">ایمیل</label>
-    <input type="email" class="form-control" id="inputEmail4">
-  </div>
-  <div class="col-md-6">
-    <label for="inputPassword4" class="form-label">نام و نام خانوادگی</label>
-    <input type="password" class="form-control" id="inputPassword4">
-  </div>
-  <div class="col-md-4">
-    <label for="inputState" class="form-label">شماره تماس</label>
-    <input type="text" class="form-control" id="inputCity">
-  </div>
-  <div class="col-md-4">
-    <label for="inputState" class="form-label">کد ملی</label>
-    <input type="text" class="form-control" id="inputCity">
-    
-  </div>
-  <div class="col-12">
-    <label for="inputAddress" class="form-label">ادرس محل زندگی  </label>
-    <input type="text" class="form-control" id="inputAddress" placeholder="استان و شهر و خیابان و کوچه">
-  </div>
-  <div class="col-12">
-    <label for="inputAddress2" class="form-label">ادرس محل زندگی </label>
-    <input type="text" class="form-control" id="inputAddress2" placeholder="پلاک و طبقه">
-  </div>
-  <div class="col-md-6">
-    <label for="inputCity" class="form-label">نام موکت</label>
-    <select id="inputState" class="form-select">
-      <option selected>انتخاب کنید</option>
-      <option>کات بی</option>
-      <option>شبنم</option>
-      <option>پونه</option>
-      <option>زیبا</option>
-      <option>الماس</option>
-      <option>یاس</option>
-      <option>صنوبر</option>
-      <option>ونوس</option>
-      <option>دالیا</option>
-      <option>لیندا</option>
-      <option>یاسمن</option>
-      <option>راش</option>
-      <option>پتینه</option>
-      <option>افرا</option>
-      <option>خزان</option>
-      <option>باران</option>
-      <option>نیلوفر</option>
-      <option>پامچال</option>
-      <option>زیبا اسپورت</option>
-      <option>زیبا</option>
-      <option>نعنا</option>
-    </select>
-  </div>
-  <div class="col-md-4">
-    <label for="inputState" class="form-label">متراژ موکت (متر مربع)</label>
-    <input type="text" class="form-control" id="inputCity">
-    
-  </div>
-  <div class="col-12">
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" id="gridCheck">
-      <label class="form-check-label" for="gridCheck">
-        انتخاب من را به خاطر بسپار
-      </label>
-    </div>
-  </div>
-  <div class="col-12">
-    <button type="submit" class="btn btn-primary">ثبت سفارش</button>
-  </div>
-</form>
-<?php
-include("footer2.html");
-?>
+<?php include("navbar.php") ?>
+<header class="masthead">
+            <div class="container px-4 px-lg-5 h-100">
+                <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                    <div class="col-lg-8 align-self-end">
+                        <h1 class="text-white font-weight-bold">فرم خرید محصول</h1>
+                        <hr class="divider" />
+                    </div>
+                    <div class="col-lg-8 align-self-baseline">
+                        <p class="text-white-75 mb-5">لطفا با دقت اطلاعات را وارد کنید</p>
+                    </div>
+                    <div class="col-lg-8 align-self-baseline">
+                    <form action="login_action.php" method="post">
+                            <div class="form-floating mb-3">
+                                <input class="form-control" type="text" placeholder="نام محصول" name="username1" required><br>
+                                <label for="username1">نام محصول</label>
+                                <div class="invalid-feedback" data-sb-feedback="name:required">A username is required.</div>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" type="text" placeholder="قیمت محصول" name="passw" required><br>
+                                <label for="passw">قیمت محصول</label>
+                                <div class="invalid-feedback" data-sb-feedback="name:required">A password is required.</div>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" type="text" placeholder="نام و نام خانوادگی" name="passw" required><br>
+                                <label for="passw"> نام و نام خانوادگی</label>
+                                <div class="invalid-feedback" data-sb-feedback="name:required">A password is required.</div>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" type="text" placeholder="(متر مربع)ابعاد" name="passw" required><br>
+                                <label for="passw">ابعاد متر مربع</label>
+                                <div class="invalid-feedback" data-sb-feedback="name:required">A password is required.</div>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" type="text" placeholder="شماره تماس " name="passw" required><br>
+                                <label for="passw"> شماره تماس</label>
+                                <div class="invalid-feedback" data-sb-feedback="name:required">A password is required.</div>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" type="text" placeholder="ادرس محل زندگی" name="passw" required><br>
+                                <label for="passw"> ادرس محل زندگی</label>
+                                <div class="invalid-feedback" data-sb-feedback="name:required">A password is required.</div>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" type="text" placeholder=" ایمیل" name="passw" required><br>
+                                <label for="passw"> ایمیل</label>
+                                <div class="invalid-feedback" data-sb-feedback="name:required">A password is required.</div>
+                            </div>
+                            <button class="btn btn-primary" type="submit">ثبت شفارش</button>
+                        </form>
+                        <?php include("footer.php") ?>
